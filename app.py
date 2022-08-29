@@ -47,11 +47,11 @@ def prediction(filename):
     number_to_class = ['Normal', 'Damaged']
     index = np.argsort(probabilities)
     predictions = {
-      "class1":number_to_class[index[9]],
-      "class2":number_to_class[index[8]],
+      "class1":number_to_class[index[0]],
+      "class2":number_to_class[index[1]],
 
-      "prob1":probabilities[index[9]],
-      "prob2":probabilities[index[8]],
+      "prob1":probabilities[index[0]],
+      "prob2":probabilities[index[1]],
   
      }
     #Step 5
